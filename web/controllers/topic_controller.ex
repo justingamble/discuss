@@ -27,7 +27,7 @@ defmodule Discuss.TopicController do
         |> redirect(to: topic_path(conn, :index))
       {:error, changeset} ->
         conn
-        |> put_flash(:error, "Topic could not be created")
+        |> put_flash(:warning, "Topic could not be created")
         |> render "new.html", changeset: changeset
     end
   end

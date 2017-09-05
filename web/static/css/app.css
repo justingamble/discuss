@@ -3,9 +3,9 @@
 .help-block {
   /* Phoenix default, applies to the error messages */
   color: red;
-  text-transform: capitalize
+  text-transform: capitalize;
   position: absolute;
-  top: 37px;
+  top: 40px;
 }
 
 .form-group {
