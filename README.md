@@ -1,20 +1,7 @@
 # Discuss
 
-To start your Phoenix app:
+This project is from ["The Complete Elixir and Phoenix Bootcamp and Tutorial"](https://www.udemy.com/the-complete-elixir-and-phoenix-bootcamp-and-tutorial/learn/v4/overview) by Stephen Grider on www.udemy.com.  Stephen's official github repo for this exercise is [here](https://github.com/StephenGrider/ElixirCode/tree/master/discuss)
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `npm install`
-  * Start Phoenix endpoint with `mix phoenix.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
