@@ -21,7 +21,7 @@ defmodule Discuss.TopicController do
     changeset = Topic.changeset(%Topic{}, topic)
 
     case Repo.insert(changeset) do
-      {:ok, topic} ->
+      {:ok, _topic} ->
         conn
         |> put_flash(:info, "Topic Created")
         |> redirect(to: topic_path(conn, :index))
@@ -30,5 +30,14 @@ defmodule Discuss.TopicController do
         |> put_flash(:warning, "Topic could not be created")
         |> render "new.html", changeset: changeset
     end
+  end
+
+  def edit(conn, %{"id" => topic_id}) do
+    topic = Repo.get(Topic, topic_id)
+    changeset = Topic.changeset(topic)
+    # this changeset has no changes yet.  We just just feeding a starting
+    # point into the form, so the form knows what to display.
+
+    render conn, "edit.html", changeset: changeset, topic: topic
   end
 end
